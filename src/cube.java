@@ -29,9 +29,8 @@ public class cube extends JPanel {
     };
 
     // rotations in radians
-    private double xyR = 0.005,
-            xzR = 0.005,
-            yzR = 0.005;
+    private double xyR = 0.005;
+    private double xzR = 0.005;
 
     // view attributes
     private final static int IMAGE_SIZE = 500,
@@ -50,6 +49,7 @@ public class cube extends JPanel {
                 for (int z = 0; z < 2; z++) {
                     xyRotate(vertex[x][y][z], Math.sin(xyR), Math.cos(xyR));
                     xzRotate(vertex[x][y][z], Math.sin(xzR), Math.cos(xzR));
+                    double yzR = 0.005;
                     yzRotate(vertex[x][y][z], Math.sin(yzR), Math.cos(yzR));
                 }
             }
