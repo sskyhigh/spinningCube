@@ -118,7 +118,7 @@ public class cube extends JPanel {
         application.setSize(400, 400);
         application.setVisible(true);
         while (true) {
-            Thread.sleep(100);
+            Thread.sleep(10); // sets rotation speed
             jPanel.repaint();
         }
     }
