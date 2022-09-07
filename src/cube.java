@@ -115,9 +115,10 @@ public class cube extends JPanel {
         JFrame application = new JFrame("Rotating Cube");
         application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         application.add(jPanel);
-        application.setSize(400, 400);
+        application.setSize(450, 450);
         application.setVisible(true);
         while (true) {
+            //thread will sleep for 10ms.
             Thread.sleep(10); // sets rotation speed
             jPanel.repaint();
         }
